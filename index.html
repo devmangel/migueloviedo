@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;500;800&family=Poppins:wght@100;200;400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="keywords" content="prudct manager, product analyst, miguel oviedo, devmangel">
+    <meta name="description" content="Miguel Oviedo portafolio website check my work here">
+    <meta property="og:image"content="./media/logo.png"/>
+    <link rel="shortcut icon" href="./media/logo.png">
+    <title>Miguel Ángel Oviedo</title>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <header>
+      <div class="lang">
+        <a href="#" class="eng lg" id="eng">ENG</a>
+        <a href="#" class="esp lg" id="esp">ESP</a>
+      </div>
+      <span class="sound" id="btn">
+        <audio src="./media/song.mp3" id="song"></audio>
+          <svg class="sound-off" id="off" width="40" height="40" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 14L19.0005 12M21 10L19.0005 12M19.0005 12L17 10M19.0005 12L21 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3 14V10C3 9.44772 3.44772 9 4 9H6.69722C6.89465 9 7.08766 8.94156 7.25192 8.83205L11.4453 6.03647C12.1099 5.59343 13 6.06982 13 6.86852V17.1315C13 17.9302 12.1099 18.4066 11.4453 17.9635L7.25192 15.1679C7.08766 15.0584 6.89465 15 6.69722 15H4C3.44772 15 3 14.5523 3 14Z" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <svg class="sound-on" id="on" width="40" height="40" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 14V10C2 9.44772 2.44772 9 3 9H5.69722C5.89465 9 6.08766 8.94156 6.25192 8.83205L10.4453 6.03647C11.1099 5.59343 12 6.06982 12 6.86852V17.1315C12 17.9302 11.1099 18.4066 10.4453 17.9635L6.25192 15.1679C6.08766 15.0584 5.89465 15 5.69722 15H3C2.44772 15 2 14.5523 2 14Z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M16.5 7.5C16.5 7.5 18 9 18 11.5C18 14 16.5 15.5 16.5 15.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.5 4.5C19.5 4.5 22 7 22 11.5C22 16 19.5 18.5 19.5 18.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>                   
+      </span>
+        <div class="header-container">
+            <h3>Hello, It's me</h3>
+            <h1>Miguel Oviedo</h1>
+            <div class="tittle">
+              <h2>Product </h2><h2 id="sentence"> Analyst</h2>
+            </div>
+        </div>
+        <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+            <label class="menu-open-button" for="menu-open" id="colors">
+             <span class="lines line-1"></span>
+             <span class="lines line-2"></span>
+             <span class="lines line-3"></span>
+           </label>
+         
+            <a href="https://www.linkedin.com/in/devmangel/" class="menu-item blue" target="_blank"><span class="blue"></span><i class="blueTittle">Linkedin</i>
+            </a>
+            <a href="https://github.com/devmangel" class="menu-item green" target="_blank"><i class="greenTittle">GitHub</i></a>
+            <a href="https://kifup.club" class="menu-item red" target="_blank"><i class="redTittle">Project</i> </a>
+            <a href="#" class="menu-item purple" target="_blank"><i class="purpleTittle">Blog </i> </a>
+            <a href="./media/MiguelOviedo-Resume.pdf" class="menu-item orange" download><i class="orangeTittle">CV</i> </a>
+            <a href="https://wa.link/xx1dh9" class="menu-item lightblue" target="_blank"><i class="lightblueTittle">Whatsapp</i>  </a>
+         </nav>
+    </header>
+    <aside class="info-container">
+    </aside>
+    <section>
+      <div class="subscribe-container">
+        <h3 class="subscribe-tittle">Want more? Let's talk about tech</h3>
+        <p class="subscribe-description">Miguel Oviedo's occasional digest on product management, blockchain, programming, and finding career fulfillment.</p>
+        <div class="subscribe-box">
+          <form id=”contact” onsubmit='postToGoogle()'>
+            <label for="message-5a14" wfd-invisible="true"></label>
+            <input type="text" data-name="Email" class="subscribe-input" id="Email" placeholder="Type your email ... " autocomplete="email" required name="entry.1894811839">
+            <button class="btn-submit-email" type="submit" id="contact-submit"> Subscribe </button>
+          </form>
+        </div>
+        <p class="disclaimer">I won't share your email with anyone</p>
+      </div>
+    </section>
+    <section class="description">
+      <div>
+        <p>function <span class="keyword">myProfile</span>() => {</p>
+          <p>+1 year exp <span class="keyword2">JavaScript</span> && <span class="keyword2">Python</span>;</p>
+          <p>+2 years exp <span class="keyword">Product Building</span>;</p>
+          <p>+4 years exp <span class="keyword3">Customer Experience</span>;</p>
+          <p class="lastKey">} ...</p>
+      </div>
+    </section>
+    <footer class="footer">
+      <p>Made with 💚 by devmangel</p>
+    </footer>
+    <script src="./src/main.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./src/tittle.js"></script>
+</body>
+</html>
