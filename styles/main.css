@@ -422,7 +422,7 @@ h3{
     background-color: #62C2E4;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
-    background-image: url(../media/whatsapp.svg);
+    background-image: url(../media/twitter.svg);
     background-repeat: no-repeat;
     background-position: center;
  }
@@ -634,4 +634,9 @@ h3{
       text-align: center;
    }
 
- }
+   .subscribed{
+      display: none;
+      position: relative;
+      top: -20px;
+   }
+}

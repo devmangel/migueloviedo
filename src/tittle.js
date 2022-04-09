@@ -1,9 +1,11 @@
+const btnESP = document.getElementById('esp');
+const btnENG = document.getElementById('eng')
 
 let sentence = document.getElementById("sentence");
 
 
 let box = "";
-let wordArr = [" Analyst "," Manager ", " Associate "];
+let wordArr = [" Analyst ", " Associate "," Manager "];
 let letterIndex = 0;
 let wordIndex = 0;
 let currWord = wordArr[wordIndex];
@@ -44,27 +46,8 @@ let typer = () =>{
 let startType = setInterval(typer, 100); //set typing speed
 
 
-// Email subscribes
+btnESP.addEventListener('click',()=>{
 
-function postToGoogle() {
-
-    var field1 = $("#Email").val();
-
-    $.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScW_BaZGwd93RN3T-PkPci5MnSrqDrH8vp0gCXXyENKME3FSg/formResponse",
-        
-      //add your google form generated numbers below which are also the 'names' of your inputs     
-      data: {
-        "entry.1894811839": field1
-      },
-      type: "POST",
-      dataType: "xml",
-      success: function (d) {
-        $('#contact').trigger('reset');
-      },
-      error: function (x, y, z) {
-        $('#contact').trigger('reset');
-      }
-    });
-    return false;
-  }
+    btnESP.style.borderBottom = 'solid white';
+    btnENG.style.borderBottom = 'none';
+})

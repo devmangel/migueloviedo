@@ -11,21 +11,12 @@
     <meta property="og:image"content="./media/logo.png"/>
     <link rel="shortcut icon" href="./media/logo.png">
     <title>Miguel Ángel Oviedo</title>
-    <script
-      src="https://unpkg.com/react@16/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-      crossorigin
-    ></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
     <header>
       <div class="lang">
-        <a href="#" class="eng lg" id="eng">ENG</a>
-        <a href="#" class="esp lg" id="esp">ESP</a>
+        <a href="./index" class="eng lg" id="eng">ENG</a>
+        <a href="./es.html" class="esp lg" id="esp">ESP</a>
       </div>
       <span class="sound" id="btn">
         <audio src="./media/song.mp3" id="song"></audio>
@@ -58,9 +49,9 @@
             </a>
             <a href="https://github.com/devmangel" class="menu-item green" target="_blank"><i class="greenTittle">GitHub</i></a>
             <a href="https://kifup.club" class="menu-item red" target="_blank"><i class="redTittle">Project</i> </a>
-            <a href="#" class="menu-item purple" target="_blank"><i class="purpleTittle">Blog </i> </a>
+            <a href="./blog.html" class="menu-item purple"><i class="purpleTittle">Blog </i> </a>
             <a href="./media/MiguelOviedo-Resume.pdf" class="menu-item orange" download><i class="orangeTittle">CV</i> </a>
-            <a href="https://wa.link/xx1dh9" class="menu-item lightblue" target="_blank"><i class="lightblueTittle">Whatsapp</i>  </a>
+            <a href="https://twitter.com/devmangel" class="menu-item lightblue" target="_blank"><i class="lightblueTittle">Twitter</i>  </a>
          </nav>
     </header>
     <aside class="info-container">
@@ -68,16 +59,18 @@
     <section>
       <div class="subscribe-container">
         <h3 class="subscribe-tittle">Want more? Let's talk about tech</h3>
-        <p class="subscribe-description">Miguel Oviedo's occasional digest on product management, blockchain, programming, and finding career fulfillment.</p>
+        <p class="subscribe-description">Miguel Oviedo's occasional digest on product management, blockchain, finding career fulfillment and technology...</p>
         <div class="subscribe-box">
-          <form id=”contact” onsubmit='postToGoogle()'>
-            <label for="message-5a14" wfd-invisible="true"></label>
-            <input type="text" data-name="Email" class="subscribe-input" id="Email" placeholder="Type your email ... " autocomplete="email" required name="entry.1894811839">
-            <button class="btn-submit-email" type="submit" id="contact-submit"> Subscribe </button>
+          <form id="form-subscription" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScW_BaZGwd93RN3T-PkPci5MnSrqDrH8vp0gCXXyENKME3FSg/formResponse">
+            <label for="message-5a14"></label>
+            <input type="text" data-name="Email" class="subscribe-input"  placeholder="Type your email ... " autocomplete="email" required name="entry.1894811839">
+            <button id="btn-submit-email" class="btn-submit-email" type="submit" > Subscribe </button>
           </form>
+          <div class="subscribed" id="subscribed">
+            <h3>You subscribed</h3>
+          </div>
         </div>
-        <p class="disclaimer">I won't share your email with anyone</p>
-      </div>
+      <p class="disclaimer">I won't share your email with anyone</p>
     </section>
     <section class="description">
       <div>
@@ -91,6 +84,7 @@
     <footer class="footer">
       <p>Made with 💚 by devmangel</p>
     </footer>
+    
     <script src="./src/main.js" type="module"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./src/tittle.js"></script>

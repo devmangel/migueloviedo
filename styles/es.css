@@ -1,0 +1,13 @@
+.eng:hover{
+    border-bottom: solid white;
+    /* transform: translate3d(10%, 0px, 0px);  */
+    transform-style: preserve-3d;
+ }
+
+ .esp{
+    border-bottom: solid white;
+ }
+ 
+ .eng{
+    border-bottom: none;
+ }

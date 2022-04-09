@@ -5,6 +5,9 @@ const song = document.getElementById('song');
 const on = document.getElementById('on');
 const off = document.getElementById('off');
 const lines = document.getElementsByClassName('lines')
+const form = document.getElementById('form-subscription');
+const subscribed = document.getElementById('subscribed');
+const btnSub = document.getElementById('btn-submit-email');
 
 const newSong = new Player(song);
 let sound = true;
@@ -70,4 +73,15 @@ function getColor(){
             color = color + 1;
         }
     }
+}
+
+btnSub.addEventListener('click',()=>{
+
+    alert('hey')
+    form.style.display = "none";
+    subscribed.style.display = "flex"
+})
+
+function example(){
+    window.location.reload();
 }
