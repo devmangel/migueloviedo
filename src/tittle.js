@@ -5,7 +5,7 @@ let sentence = document.getElementById("sentence");
 
 
 let box = "";
-let wordArr = [" Analyst ", " Associate "," Manager "];
+let wordArr = [" Manager ", " Owner "," Analyst "];
 let letterIndex = 0;
 let wordIndex = 0;
 let currWord = wordArr[wordIndex];
